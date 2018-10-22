@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/superhero/bootstrap.min.css" rel="stylesheet" >
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5">Alivio</h1>
+            <p class="lead">Debt management client application</p>
+        </div>
+    </div>
+    <title th:text="#{lang.enterYourDetailsToSeeYourDebts}">Enter your details to see your debts</title>
+    <!--<link href="signin.css" rel="stylesheet">-->
+</head>
+<body>
+<div class="container">
+    <div th:insert="fragments :: debtorHeader"></div>
+    <div th:insert="fragments :: paymentPlanHeader"></div>
+    <div th:insert="fragments :: paymentPlan"></div>
+
+    <hr class="mb-4">
+    <h4 class="mb-3" th:text="#{lang.paymentMethods}">Payment Methods</h4>
+
+        <div class="row justify-content-around">
+            <div class="col-4">
+                <a href="/paymentConfirmationCreditCard">
+                    <img src="visa-and-mastercard.png" alt="visa-and-mastercard" style="width:400px;height:100px;border:0;">
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="https://www.paypal.com">
+                    <img src="PayPal.png" alt="pay-pal" style="width:400px;height:100px;border:0;">
+                </a>
+            </div>
+        </div>
+
+    <hr class="mb-4">
+    <div th:insert="fragments :: footer"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#activemq:
+#  broker-url: tcp://ec2-34-245-25-132.eu-west-1.compute.amazonaws.com:7030
+
+queue:
+  helloworld: jms.queue.paymentplan
+
+logging:
+  level:
+    ROOT: WARN
+    eu.sii.pl.alivio: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: ../logs/alivio.log

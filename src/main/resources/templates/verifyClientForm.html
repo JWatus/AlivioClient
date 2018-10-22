@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/superhero/bootstrap.min.css" rel="stylesheet" >
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5">Alivio</h1>
+            <p class="lead">Debt management client application</p>
+        </div>
+    </div>
+    <title th:text="#{lang.enterDetailsToPayOff}">Enter your details to see your debts</title>
+    <!--<link href="signin.css" rel="stylesheet">-->
+</head>
+<body>
+<div class="container">
+<form class="form-signin" action="#" th:action="@{/form}" th:object="${debtor}" method="post">
+
+    <div class="text-center mb-4">
+        <p th:text="#{lang.enterDetailsToPayOff}">Enter your details to see your debts</p>
+    </div>
+
+    <div class="form-label-group">
+        <label th:text="#{lang.firstName}" for="firstName">First name</label>
+        <input type="text" id="firstName" class="form-control" placeholder="First name" required autofocus
+               th:field="*{firstName}"><br>
+        <p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="error">First name Error</p>
+    </div>
+
+    <div class="form-label-group">
+        <label th:text="#{lang.lastName}" for="lastName">Last name</label>
+        <input type="text" id="lastName" class="form-control" placeholder="Last name" required th:field="*{lastName}"><br>
+        <p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="error">Last name Error</p>
+    </div>
+
+    <div class="form-label-group">
+        <label th:text="#{lang.ssn}" for="ssn">SSN</label>
+        <input type="text" id="ssn" class="form-control" placeholder="ssn" required th:field="*{ssn}"><br>
+        <p th:if="${#fields.hasErrors('ssn')}" th:errors="*{ssn}" class="error">SNN Error</p>
+    </div>
+
+    <button th:text="#{lang.send}" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <div>
+        <span th:unless="${errorMsg} == ''" th:text="${errorMsg}" class="error"/>
+    </div>
+    <div th:insert="fragments :: footer"></div>
+</form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+</html>

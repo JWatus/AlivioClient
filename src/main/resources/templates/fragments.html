@@ -1,0 +1,139 @@
+<div th:fragment="balance">
+    <div class="container">
+        <h3 th:text="#{lang.debts}">List of debts:</h3>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col" th:text="#{lang.debtId}">Debt Id:</th>
+                <th scope="col" th:text="#{lang.productName}">Product name:</th>
+                <th scope="col" th:text="#{lang.creditAmount}">Credit Amount:</th>
+                <th scope="col" th:text="#{lang.payedSum}">Payed (sum):</th>
+                <th scope="col" th:text="#{lang.expDate}">Expiration Date:</th>
+                <th scope="col" th:text="#{lang.remainingDebt}">Remaining debt (sum):</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="debt: ${debtorview.debtViewList}">
+                <th scope="row" th:utext="${debt.uuid}">...</th>
+                <td th:utext="${debt.debtName}">...</td>
+                <td th:utext="${debt.debtAmount}">...</td>
+                <td th:utext="${debt.debtPaymentSum}">...</td>
+                <td th:utext="${debt.repaymentDate}">...</td>
+                <td th:utext="${debt.debtRemainingSum}">...</td>
+            </tr>
+            <tr>
+                <th scope="row" th:text="#{lang.total}">total</th>
+                <td th:utext="${debtorview.debtorSummaryView.debtsNumberSum}">...</td>
+                <td th:utext="${debtorview.debtorSummaryView.debtsAmountSum}">...</td>
+                <td th:utext="${debtorview.debtorSummaryView.payedAmountSum}">...</td>
+                <td></td>
+                <td th:utext="${debtorview.debtorSummaryView.remainingAmountSum}">...</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div th:fragment="paymentPlan">
+    <div class="container">
+        <div th:if="${paymentPlanView != null}">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col" th:text="#{lang.debtId}">Debt Id:</th>
+                    <th scope="col" th:text="#{lang.productName}">Product name:</th>
+                    <th scope="col" th:text="#{lang.expDate}">Expiration Date:</th>
+                    <th scope="col" th:text="#{lang.creditAmount}">Credit Amount:</th>
+                    <th scope="col" th:text="#{lang.payedSum}">Payed (sum):</th>
+                    <th scope="col" th:text="#{lang.repaymentAmount}">Planned Repayment Amount:</th>
+                    <th scope="col" th:text="#{lang.remainingDebt}">Planned Remaining Debt Amount (sum)</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr th:each="item: ${paymentPlanView.plannedPaymentViewList}">
+                    <th th:utext="${item.debtView.uuid }">...</th>
+                    <td th:utext="${item.debtView.debtName}">...</td>
+                    <td th:utext="${item.debtView.repaymentDate}">...</td>
+                    <td th:utext="${item.debtView.debtAmount}">...</td>
+                    <td th:utext="${item.debtView.debtPaymentSum}">...</td>
+                    <td th:utext="${item.plannedPayment.amountOfRepaymentDebt}">...</td>
+                    <td th:utext="${item.plannedRemainingAmount }">...</td>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col" th:text="#{lang.total}">total:</th>
+                    <td th:utext="${paymentPlanView.plannedPaymentSum}">...</td>
+                    <td th:utext="${paymentPlanView.plannedRemainingSum}">...</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<div th:fragment="buttons">
+    <div class="container">
+
+        <div class="row justify-content-around">
+            <div class="col-4">
+                <form class="form-signin" action="#" th:action="@{/paymentdeclaration}" method="get">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit"  th:text="#{lang.cancel}">Cancel</button>
+                </form>
+            </div>
+            <div class="col-4">
+                <form class="form-signin" action="#" th:action="@{/paymentconfirmation}" method="get">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{lang.confirm}">Confirm</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div th:fragment="debtorHeader">
+    <div class="container">
+        <h3 th:text="#{lang.deptor}">Debtor</h3>
+        <div class="row justify-content-around">
+            <div class="col-4">
+                <div class="label-my" th:text="#{lang.firstName}">First name:</div>
+                <div th:text="${debtorview.debtorFirstName}"></div>
+            </div>
+            <div class="col-4">
+                <div class="label-my" th:text="#{lang.lastName}">Last name:</div>
+                <div th:text="${debtorview.debtorLastName}"></div>
+            </div>
+            <div class="col-4">
+                <div class="label-my" th:text="#{lang.ssn}">SSN:</div>
+                <div th:text="${debtorview.debtorSsn}"></div>
+            </div>
+        </div>
+        <hr class="mb-4">
+    </div>
+</div>
+
+<div th:fragment="paymentPlanHeader">
+    <div class="container mb-3">
+        <h3 th:text="#{lang.paymentPlan}">Payment Plan</h3>
+        <div class="row justify-content-start">
+            <div class="col-4">
+                <div class="label-my" th:text="#{lang.apiMessageLabel}">message:</div>
+                <div th:utext="${paymentPlanView.paymentPlan.message}"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:fragment="footer">
+    <div class="container">
+        <div class="text-center mb-4">
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2018 Alivio</p>
+        </div>
+    </div>
+</div>
+
+

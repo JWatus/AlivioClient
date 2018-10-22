@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{lang.debtorBalance}">Debtor balance</title>
+</head>
+<!--<link href="signin.css" rel="stylesheet">-->
+<body>
+
+<h3 th:text="#{lang.paymentSavedSuccessfully}">Payment Saved Successfully</h3>
+<strong th:text="#{lang.payment}">Payment:</strong><br>
+
+<table>
+    <tr>
+        <td th:text="#{lang.ssn}">ssn:</td>
+        <td><p th:utext="${paymentForm.ssn}"/></td>
+    </tr>
+    <tr>
+        <td th:text="#{lang.debtId}">Debt Id:</td>
+        <td><p th:utext="${paymentForm.debtUuid}"/></td>
+    </tr>
+
+    <tr>
+        <td th:text="#{lang.paymentDate}">payment.paymentDate:</td>
+        <td><p th:utext="${paymentForm.payment.paymentDate}"/></td>
+    </tr>
+    <tr>
+        <td th:text="#{lang.paymentAmount}">payment.paymentAmount:</td>
+        <td><p th:utext="${paymentForm.payment.paymentAmount}"/></td>
+    </tr>
+
+    <tr>
+        <td th:text="#{lang.cCNumber}">creditCard.ccNumber:</td>
+        <td><p th:utext="${paymentForm.payment.creditCard.ccNumber}"/></td>
+    </tr>
+    <tr>
+        <td th:text="#{lang.cvv}">creditCard.cvv:</td>
+        <td><p th:utext="${paymentForm.payment.creditCard.cvv}"/></td>
+    </tr>
+    <tr>
+        <td th:text="#{lang.issuingNetwork}">creditCard.issuingNetwork:</td>
+        <td><p th:utext="${paymentForm.payment.creditCard.issuingNetwork}"/></td>
+    </tr>
+    <tr>
+        <td th:text="#{lang.firstName}">creditCard.firstName:</td>
+        <td><p th:utext="${paymentForm.payment.creditCard.firstName}"/></td>
+    </tr>
+    <tr>
+        <td th:text="#{lang.lastName}">creditCard.lastName:</td>
+        <td><p th:utext="${paymentForm.payment.creditCard.lastName}"/></td>
+    </tr>
+    <tr>
+        <td th:text="#{lang.creditCardExpDate}">creditCard.expDate:</td>
+        <td><p th:utext="${paymentForm.payment.creditCard.expDate}"/></td>
+    </tr>
+
+</table>
+
+<div>
+    <h3 th:text="#{lang.enterNewPayment}">Enter new payment</h3>
+    <form action="#" th:action="@{/form}" method="get">
+        <table>
+            <tr>
+                <td>
+                    <button type="submit" th:text="#{lang.submit}">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div th:insert="fragments :: footer"></div>
+</body>
+</html>
