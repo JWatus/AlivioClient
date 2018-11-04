@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.model;
+package alivio.model;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Digits;

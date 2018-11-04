@@ -1,8 +1,8 @@
-package eu.sii.pl.alivio.views.builders;
+package alivio.views.builders;
 
-import eu.sii.pl.alivio.model.Debt;
-import eu.sii.pl.alivio.utils.DebtCalculatorUtil;
-import eu.sii.pl.alivio.views.debtor.DebtView;
+import alivio.model.Debt;
+import alivio.utils.DebtCalculatorUtil;
+import alivio.views.debtor.DebtView;
 
 public class DebtViewBuilder {
     private final Debt debt;

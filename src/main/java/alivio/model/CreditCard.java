@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.model;
+package alivio.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
 

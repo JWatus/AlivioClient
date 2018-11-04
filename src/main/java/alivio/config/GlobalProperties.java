@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.config;
+package alivio.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -11,7 +11,7 @@ public class GlobalProperties {
     private String apiVerifyDebtorEndpoint;
     private String apiPaymentEndpoint;
     private String apiPaymentPlanEndpoint;
-    private  String apiPaymentMethodsCreditcardEndpoint;
+    private String apiPaymentMethodsCreditcardEndpoint;
 
     public String getApiUrl() {
         return apiUrl;

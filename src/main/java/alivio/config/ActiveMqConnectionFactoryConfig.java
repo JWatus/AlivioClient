@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.config;
+package alivio.config;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.beans.factory.annotation.Value;

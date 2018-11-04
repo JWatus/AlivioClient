@@ -1,14 +1,14 @@
-package eu.sii.pl.alivio.controller;
+package alivio.controller;
 
+import alivio.jms.producer.JmsProducer;
+import alivio.model.Debtor;
+import alivio.model.PaymentDeclaration;
+import alivio.model.PaymentPlan;
+import alivio.views.builders.DebtorViewBuilder;
+import alivio.views.builders.PaymentPlanViewBuilder;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import eu.sii.pl.alivio.config.GlobalProperties;
-import eu.sii.pl.alivio.jms.producer.JmsProducer;
-import eu.sii.pl.alivio.model.Debtor;
-import eu.sii.pl.alivio.model.PaymentDeclaration;
-import eu.sii.pl.alivio.model.PaymentPlan;
-import eu.sii.pl.alivio.views.builders.DebtorViewBuilder;
-import eu.sii.pl.alivio.views.builders.PaymentPlanViewBuilder;
+import alivio.config.GlobalProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -50,7 +50,7 @@ public class PaymentDeclarationController {
         final String resourceUri = globalProperties.getApiUrl()
                 .concat(globalProperties.getApiBalanceEndpoint() + ssnAttribute);
 
-      //  jmsProducer.send(".balance", ssnAttribute, "Alivio");
+        //  jmsProducer.send(".balance", ssnAttribute, "Alivio");
 
         try {
             Debtor debtor = restTemplate.getForObject(resourceUri, Debtor.class);
@@ -89,7 +89,7 @@ public class PaymentDeclarationController {
             return paymentDeclarationModel;
         }
 
-       // jmsProducer.send(".paymentplan", paymentDeclaration, "Alivio");
+        // jmsProducer.send(".paymentplan", paymentDeclaration, "Alivio");
 
         try {
             String json = objectMapper.writeValueAsString(paymentDeclaration);

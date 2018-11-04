@@ -1,6 +1,6 @@
-package eu.sii.pl.alivio.model;
+package alivio.model;
 
-import eu.sii.pl.alivio.validator.Ssn;
+import alivio.validator.Ssn;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;

@@ -1,11 +1,11 @@
-package eu.sii.pl.alivio.controller;
+package alivio.controller;
 
+import alivio.model.Debtor;
+import alivio.model.PaymentForm;
+import alivio.views.builders.DebtorViewBuilder;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import eu.sii.pl.alivio.config.GlobalProperties;
-import eu.sii.pl.alivio.model.Debtor;
-import eu.sii.pl.alivio.model.PaymentForm;
-import eu.sii.pl.alivio.views.builders.DebtorViewBuilder;
+import alivio.config.GlobalProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;

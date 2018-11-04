@@ -1,6 +1,6 @@
-package eu.sii.pl.alivio.views.debtor;
+package alivio.views.debtor;
 
-import eu.sii.pl.alivio.model.Debtor;
+import alivio.model.Debtor;
 
 import java.util.Collections;
 import java.util.List;

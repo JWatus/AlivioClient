@@ -1,7 +1,7 @@
-package eu.sii.pl.alivio.utils;
+package alivio.utils;
 
-import eu.sii.pl.alivio.model.Debt;
-import eu.sii.pl.alivio.model.Payment;
+import alivio.model.Debt;
+import alivio.model.Payment;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

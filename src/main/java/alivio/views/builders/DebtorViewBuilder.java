@@ -1,9 +1,9 @@
-package eu.sii.pl.alivio.views.builders;
+package alivio.views.builders;
 
-import eu.sii.pl.alivio.model.Debtor;
-import eu.sii.pl.alivio.views.debtor.DebtView;
-import eu.sii.pl.alivio.views.debtor.DebtorSummaryView;
-import eu.sii.pl.alivio.views.debtor.DebtorView;
+import alivio.model.Debtor;
+import alivio.views.debtor.DebtView;
+import alivio.views.debtor.DebtorSummaryView;
+import alivio.views.debtor.DebtorView;
 
 import java.util.ArrayList;
 import java.util.List;

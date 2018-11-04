@@ -1,7 +1,7 @@
-package eu.sii.pl.alivio.views.plannedpayment;
+package alivio.views.plannedpayment;
 
-import eu.sii.pl.alivio.model.PlannedPayment;
-import eu.sii.pl.alivio.views.debtor.DebtView;
+import alivio.model.PlannedPayment;
+import alivio.views.debtor.DebtView;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

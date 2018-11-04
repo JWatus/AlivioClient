@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.model;
+package alivio.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

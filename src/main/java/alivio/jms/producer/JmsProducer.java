@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.jms.producer;
+package alivio.jms.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

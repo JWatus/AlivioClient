@@ -1,9 +1,9 @@
-package eu.sii.pl.alivio.controller;
+package alivio.controller;
 
+import alivio.jms.producer.JmsProducer;
+import alivio.model.Debtor;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import eu.sii.pl.alivio.config.GlobalProperties;
-import eu.sii.pl.alivio.jms.producer.JmsProducer;
-import eu.sii.pl.alivio.model.Debtor;
+import alivio.config.GlobalProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -59,7 +59,7 @@ public class VerifyClientController {
         model.addAttribute("debtor", debtor);
         session.setAttribute("ssn", debtor.getSsn());
 
-       // jmsProducer.send(".login", debtor, "Alivio");
+        // jmsProducer.send(".login", debtor, "Alivio");
 
         try {
             ResponseEntity<String> response = restTemplate.postForEntity(

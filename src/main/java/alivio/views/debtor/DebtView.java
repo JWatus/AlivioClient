@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.views.debtor;
+package alivio.views.debtor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

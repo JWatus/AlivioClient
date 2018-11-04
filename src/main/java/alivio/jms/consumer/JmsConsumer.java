@@ -1,11 +1,10 @@
-package eu.sii.pl.alivio.jms.consumer;
+package alivio.jms.consumer;
 
+import alivio.model.Debtor;
+import alivio.model.PaymentPlan;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import eu.sii.pl.alivio.model.Debtor;
-import eu.sii.pl.alivio.model.PaymentPlan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 import javax.jms.JMSException;
@@ -22,7 +21,7 @@ public class JmsConsumer {
         this.objectMapper = objectMapper;
     }
 
-//    @JmsListener(destination = "${activemq.queue.alivio}")
+    //    @JmsListener(destination = "${activemq.queue.alivio}")
     public void receiver(TextMessage textMessage) throws JMSException, IOException {
         String endpoint = textMessage.getStringProperty("endpoint");
         String json = textMessage.getText();

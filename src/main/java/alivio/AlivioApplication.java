@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio;
+package alivio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
