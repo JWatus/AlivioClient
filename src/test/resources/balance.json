@@ -1,0 +1,240 @@
+{
+  "id": null,
+  "firstName": "Joe",
+  "lastName": "Doe",
+  "ssn": "980-122-112",
+  "debts": [{
+    "id": null,
+    "debtAmount": 50000.00,
+    "repaymentDate": "2017-11-16",
+    "uuid": "CRTP/909088",
+    "debtName": "Cross Finance",
+    "payments": [{
+      "id": 5,
+      "paymentDate": "2009-09-09",
+      "paymentAmount": 500.00,
+      "clientId": "Alivio",
+      "creditCard": {
+        "id": 2,
+        "ccNumber": "5199863120932752",
+        "cvv": "109",
+        "firstName": "Andy",
+        "lastName": "Larkin",
+        "issuingNetwork": "MasterCard",
+        "expDate": "2025-02-14"
+      }
+    }, {
+      "id": 4,
+      "paymentDate": "2014-01-19",
+      "paymentAmount": 700.00,
+      "clientId": "Velka",
+      "creditCard": {
+        "id": 1,
+        "ccNumber": "4556611605570880",
+        "cvv": "235",
+        "firstName": "Stanley",
+        "lastName": "Ipkins",
+        "issuingNetwork": "VISA",
+        "expDate": "2020-07-07"
+      }
+    }]
+  }, {
+    "id": null,
+    "debtAmount": 35000.00,
+    "repaymentDate": "1974-06-06",
+    "uuid": "ADWR/595501",
+    "debtName": "Opp Loans",
+    "payments": [{
+      "id": 7,
+      "paymentDate": "2018-06-04",
+      "paymentAmount": 432.00,
+      "clientId": "Alivio",
+      "creditCard": {
+        "id": 3,
+        "ccNumber": "1236547890123654",
+        "cvv": "123",
+        "firstName": "ty",
+        "lastName": "kjsahdkj",
+        "issuingNetwork": "MasterCard",
+        "expDate": "2018-06-30"
+      }
+    }, {
+      "id": 3,
+      "paymentDate": "2015-07-28",
+      "paymentAmount": 671.00,
+      "clientId": "Velka",
+      "creditCard": {
+        "id": 1,
+        "ccNumber": "4556611605570880",
+        "cvv": "235",
+        "firstName": "Stanley",
+        "lastName": "Ipkins",
+        "issuingNetwork": "VISA",
+        "expDate": "2020-07-07"
+      }
+    }, {
+      "id": 9,
+      "paymentDate": "2018-06-04",
+      "paymentAmount": 12334.00,
+      "clientId": "Alivio",
+      "creditCard": {
+        "id": 5,
+        "ccNumber": "1236547890123654",
+        "cvv": "123",
+        "firstName": "dhfkjsh",
+        "lastName": "iueri",
+        "issuingNetwork": "MasterCard",
+        "expDate": "2018-06-30"
+      }
+    }]
+  }, {
+    "id": null,
+    "debtAmount": 4000.00,
+    "repaymentDate": "1999-12-01",
+    "uuid": "PLWT/871422",
+    "debtName": "King Of Kash",
+    "payments": [{
+      "id": 6,
+      "paymentDate": "2015-07-28",
+      "paymentAmount": 150.00,
+      "clientId": "Alivio",
+      "creditCard": {
+        "id": 1,
+        "ccNumber": "4556611605570880",
+        "cvv": "235",
+        "firstName": "Stanley",
+        "lastName": "Ipkins",
+        "issuingNetwork": "VISA",
+        "expDate": "2020-07-07"
+      }
+    }]
+  }, {
+    "id": null,
+    "debtAmount": 60000.00,
+    "repaymentDate": "2018-02-06",
+    "uuid": "KIGT/116256",
+    "debtName": "India Lends",
+    "payments": [{
+      "id": 1,
+      "paymentDate": "2015-06-06",
+      "paymentAmount": 700.00,
+      "clientId": "Alivio",
+      "creditCard": {
+        "id": 1,
+        "ccNumber": "4556611605570880",
+        "cvv": "235",
+        "firstName": "Stanley",
+        "lastName": "Ipkins",
+        "issuingNetwork": "VISA",
+        "expDate": "2020-07-07"
+      }
+    }, {
+      "id": 2,
+      "paymentDate": "2015-07-28",
+      "paymentAmount": 700.00,
+      "clientId": "Velka",
+      "creditCard": {
+        "id": 1,
+        "ccNumber": "4556611605570880",
+        "cvv": "235",
+        "firstName": "Stanley",
+        "lastName": "Ipkins",
+        "issuingNetwork": "VISA",
+        "expDate": "2020-07-07"
+      }
+    }]
+  }]
+}
+
+
+//{
+//  "id": 1,
+//  "firstName": "Joe",
+//  "lastName": "Doe",
+//  "ssn": "980-122-112",
+//  "debts": [{
+//    "id": 1,
+//    "uuid": "111222333444",
+//    "debtAmount": 50000.00,
+//    "repaymentDate": "2018-05-07",
+//    "debtName": "speedLoan",
+//    "listOfPayments": [{
+//      "id": 2,
+//      "repaymentDate": "2018-05-07",
+//      "clientId": "Alivio",
+//      "paymentAmount": 500.00,
+//      "creditCard": {
+//        "id": 2,
+//        "cvv": "109",
+//        "ccNumber": "98978872537125",
+//        "firstName": "Jakub",
+//        "lastName": "Watus",
+//        "issuingNetwork": "MasterCard",
+//        "expDate": "2018-05-07"
+//      }
+//    }, {
+//      "id": 1,
+//      "repaymentDate": "2018-05-07",
+//      "clientId": "Alivio",
+//      "paymentAmount": 700.00,
+//      "creditCard": {
+//        "id": 1,
+//        "cvv": "235",
+//        "ccNumber": "23457590909018",
+//        "firstName": "Jakub",
+//        "lastName": "Watus",
+//        "issuingNetwork": "VISA",
+//        "expDate": "2018-05-07"
+//      }
+//    }, {
+//      "id": 5,
+//      "repaymentDate": "2018-05-08",
+//      "clientId": null,
+//      "paymentAmount": 2000.00,
+//      "creditCard": {
+//        "id": 3,
+//        "cvv": "323",
+//        "ccNumber": "1234567890123456",
+//        "firstName": "Jakub",
+//        "lastName": "Watus",
+//        "issuingNetwork": "Visa",
+//        "expDate": "2018-05-14"
+//      }
+//    }]
+//  }, {
+//    "id": 2,
+//    "uuid": "999888777666",
+//    "debtAmount": 60000.00,
+//    "repaymentDate": "2018-05-07",
+//    "debtName": "fastLoan",
+//    "listOfPayments": [{
+//      "id": 4,
+//      "repaymentDate": "2018-05-07",
+//      "clientId": "Alivio",
+//      "paymentAmount": 700.00,
+//      "creditCard": {
+//        "id": 1,
+//        "cvv": "235",
+//        "ccNumber": "23457590909018",
+//        "firstName": "Jakub",
+//        "lastName": "Watus",
+//        "issuingNetwork": "VISA",
+//        "expDate": "2018-05-07"
+//      }
+//    }, {
+//      "id": 3,
+//      "repaymentDate": "2018-05-07",
+//      "clientId": "Alivio",
+//      "paymentAmount": 700.00,
+//      "creditCard": {
+//        "id": 1,
+//        "cvv": "235",
+//        "ccNumber": "23457590909018",
+//        "firstName": "Jakub",
+//        "lastName": "Watus",
+//        "issuingNetwork": "VISA",
+//        "expDate": "2018-05-07"
+//      }
+//    }]
+//  }]
+//}
