@@ -1,7 +1,8 @@
-package eu.sii.pl.alivio.utils;
+package alivio.utils;
 
-import eu.sii.pl.alivio.model.Debt;
-import eu.sii.pl.alivio.providers.TestObjectsProviderUtil;
+import alivio.model.Debt;
+import alivio.utils.DebtCalculatorUtil;
+import alivio.providers.TestObjectsProviderUtil;
 import org.junit.Before;
 import org.junit.Test;
 

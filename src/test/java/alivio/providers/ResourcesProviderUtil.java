@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.providers;
+package alivio.providers;
 
 import java.io.IOException;
 import java.nio.file.Files;

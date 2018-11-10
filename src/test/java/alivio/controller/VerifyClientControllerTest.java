@@ -1,4 +1,4 @@
-package eu.sii.pl.alivio.controller;
+package alivio.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

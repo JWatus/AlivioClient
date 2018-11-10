@@ -1,10 +1,10 @@
-package eu.sii.pl.alivio.views.builders;
+package alivio.views.builders;
 
-import eu.sii.pl.alivio.model.Debtor;
-import eu.sii.pl.alivio.providers.TestObjectsProviderUtil;
-import eu.sii.pl.alivio.views.debtor.DebtView;
-import eu.sii.pl.alivio.views.debtor.DebtorSummaryView;
-import eu.sii.pl.alivio.views.debtor.DebtorView;
+import alivio.model.Debtor;
+import alivio.providers.TestObjectsProviderUtil;
+import alivio.views.debtor.DebtView;
+import alivio.views.debtor.DebtorSummaryView;
+import alivio.views.debtor.DebtorView;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,8 +1,8 @@
-package eu.sii.pl.alivio.controller;
+package alivio.controller;
 
-import eu.sii.pl.alivio.config.GlobalProperties;
-import eu.sii.pl.alivio.providers.ResourcesProviderUtil;
-import eu.sii.pl.alivio.views.debtor.DebtorView;
+import alivio.config.GlobalProperties;
+import alivio.providers.ResourcesProviderUtil;
+import alivio.views.debtor.DebtorView;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

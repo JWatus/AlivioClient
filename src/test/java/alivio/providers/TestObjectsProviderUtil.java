@@ -1,6 +1,6 @@
-package eu.sii.pl.alivio.providers;
+package alivio.providers;
 
-import eu.sii.pl.alivio.model.*;
+import alivio.model.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -36,7 +36,7 @@ public final class TestObjectsProviderUtil {
                 Arrays.asList(debt, debt2));
     }
 
-    public static PaymentPlan getExamplePaymentPlan(){
+    public static PaymentPlan getExamplePaymentPlan() {
         PaymentPlan paymentPlan = new PaymentPlan();
         PlannedPayment plannedPayment = new PlannedPayment();
         plannedPayment.setUuid("111222333444");
