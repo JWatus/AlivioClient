@@ -1,6 +1,6 @@
 ## Alivio - Debts Management Client Application :money_with_wings: :credit_card: 
 
-#### This client application allows user to connect to MiCuenta API and manage his debts.
+#### This is example of client application which allows user to connect to MiCuenta API and manage his debts.
 
 ### Configuration 
 
@@ -10,23 +10,18 @@ This project use the following ports :
 |------------|------|
 | localhost  | 8080 |
 
-### Assumptions
-
-This is example of client application which can be used to connect with 'MiCuenta' API. This API allows debtor to
-checkout his debts, make a payment plan and actualize payments. 
-
 ### How does it work?
 
 Application operations in sequence are:
 
-1. Through client application user is sending request with <i>Debtor</i> object. Next debtor is validated 
+1. Through this application user is sending request with <i>Debtor</i> object to MiCuenta API. Next debtor is validated 
 and depending on his presence in database returned is response with status: 200 if debtor is found or 404 
 otherwise.
 
-2. Next step is request for balance. Client is sending SSN number and API response with all debts 
+2. Next step is request for balance. This client is sending SSN number and API response with all debts 
 off this debtor.
 
-3. In third request client application is sending <i>PaymentDeclaration</i> object. API gets from this 
+3. In third request Alivio is sending <i>PaymentDeclaration</i> object. API gets from this 
 ID (if user has chosen specific debt to be paid) of chosen debt and amount of money which will be paid.
 In response API is sending <i>PaymentPlan</i> based on received amount. This object has list of 
 <i>PlannedPayments</i> and appropriate message for user - how repayment system works is described 
@@ -49,7 +44,6 @@ amount will be greater then zero.
 message will be send to client.
 - If there will be no more debts to be paid, user will get message about no more debts to be paid off.
  
-
 ### Technology used to create and develop this application: 
 - Java 8
 - Spring Boot
