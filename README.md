@@ -12,7 +12,7 @@ This project use the following ports :
 
 ### MiCuenta API
 
-If You want to check out how it all looks like there will be necessity of running MiCuenta API. Source code of it You can find here:
+If You want to check out how it all looks like there will be necessity of running MiCuenta API. Source code of it You can find at following link:
 * [https://github.com/JWatus/MiCuentaApp](https://github.com/JWatus/MiCuentaApp)
 
 ### How does it work?
