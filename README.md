@@ -10,6 +10,11 @@ This project use the following ports :
 |------------|------|
 | localhost  | 8080 |
 
+### MiCuenta API
+
+If You want to check out how it all looks like there will be necessity of running MiCuenta API. Source code of it You can find here:
+* [https://github.com/JWatus/MiCuentaApp](https://github.com/JWatus/MiCuentaApp)
+
 ### How does it work?
 
 Application operations in sequence are:
