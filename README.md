@@ -4,7 +4,7 @@
 
 ### Configuration 
 
-This project use the following ports : 
+This project uses the following ports : 
 
 | Server     | Port |
 |------------|------|
